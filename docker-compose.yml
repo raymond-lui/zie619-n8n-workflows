@@ -4,4 +4,10 @@ services:
     build:
       context: .
     ports:
-      - "8000:8000"
+      - "6400:8000"
+    logging:
+      driver: "none"
+    environment:
+      PUID: 1030
+      PGID: 65538
+      TZ: Australia/Melbourne
