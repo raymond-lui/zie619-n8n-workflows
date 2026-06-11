@@ -11,3 +11,13 @@ services:
       PUID: 1030
       PGID: 65538
       TZ: Australia/Melbourne
+
+networks:
+
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.150.122.0/24
+          gateway: 172.150.122.1
